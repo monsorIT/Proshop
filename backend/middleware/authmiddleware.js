@@ -19,7 +19,9 @@ const protect = AsyncHandler(async (req, res, next) => {
             res.status(401)
             throw new Error('Not Authorized, token failed')
         }
+        return
     }
+
 
     if (!token) {
         res.status(401)
