@@ -29,7 +29,8 @@ const CartScreen = ({ match, location, history }) => {
 
     const navigate = useNavigate()
     const checkOutHandler = () => {
-        navigate('/login?redirect=shipping')
+        navigate('/login?redirect=/shipping')
+        //  navigate('/login?redirect=shipping')
     }
 
     return (
